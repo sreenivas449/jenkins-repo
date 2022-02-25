@@ -1,0 +1,11 @@
+pipeline{
+  agent any
+  stages{
+    stage('jenkins-hello'){
+      steps{
+        echo "{$BUILD_TAG}"
+        echo "{$NODE_LABELS}"
+      }
+    }
+   }
+}
